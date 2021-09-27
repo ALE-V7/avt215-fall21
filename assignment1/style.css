@@ -55,3 +55,10 @@ font-weight: bold;
 font-size: 30px;
 line-height: 20px;
 color: #CED2DC;
+
+}
+
+  img {
+    width: 100%;
+    height: auto;
+  }
