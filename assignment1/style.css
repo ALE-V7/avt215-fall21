@@ -4,8 +4,8 @@ body {
 }
 
 h1 {
-  width: 715px;
-height: 125px;
+  width: 100%;
+  height: auto;
 
   font-family: Coda Caption;
 font-style: normal;
@@ -16,8 +16,8 @@ color: #F2F5FA;
 }
 
 h2 {
-  width: 185px;
-height: 90px;
+  width: 100%;
+  height: auto;
 
   font-family: Gentium Basic;
   font-style: normal;
@@ -28,6 +28,8 @@ color: #C30011;
 }
 
 h3 {
+  width: 100%;
+  height: auto;
 
   font-family: Gentium Basic;
 font-style: normal;
@@ -46,9 +48,10 @@ p {
   color: #CED2DC;
 }
 
-h3 {
-  width: 900px;
-height: 45px;
+h4 {
+  width: 100%;
+  height: auto;
+
 
 font-style: normal;
 font-weight: bold;
@@ -58,7 +61,13 @@ color: #CED2DC;
 
 }
 
-  img {
+  .main{
     width: 100%;
     height: auto;
+  }
+
+  div {
+    width: 500px;
+    height: 500px;
+    float: left;
   }
