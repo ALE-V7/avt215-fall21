@@ -1,0 +1,7 @@
+.instructions {
+  list-style-type: circle;
+}
+
+.instructions ul {
+  list-style-type: square;
+}

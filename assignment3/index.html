@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<!-- Info about the page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Alejandro Vargas">
+    <meta name="description" content="template for html">
+    <meta name="keywords" content="hello, world, html">
+
+    <title>Assignment 3: Create a Simple RSVP Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+<!-- Info about the page -->
+
+<h1>Assignment 3: Create a Simple RSVP Form</h1>
+
+<p>Your task: create a simple RSVP form that collects the following information from an imaginary user registering for an imaginary event:</p>
+
+<ul class="instructions">
+  <li>Name</li>
+  <li>Email</li>
+  <li>Telephone</li>
+  <li>Meal Choice (choose <strong>one</strong>)
+    <ul>
+        <li>Beef</li>
+        <li>Chicken</li>
+        <li>Fish</li>
+        <li>Vegan</li>
+    </ul>
+  </li>
+  <li>Comments</li>
+  <li>A "submit" button</li>
+</ul>
+
+<p>Check out the <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"><strong>W3Schools.com HTML Forms</strong></a> tutorial to learn what HTML elements to use to build your form, and use CSS to style your form in the column to the right.</p>
+
+<p><strong>IMPORTANT:</strong> Don't forget to use <a href="https://www.w3.org/WAI/tutorials/forms/labels/" target="-blank">HTML Label elements</a> to ensure your form is accessible to screen readers. Note that the "for" attribute must match the "id" attribute of the form input element.</p>
+
+<p><strong>NOTES:</strong></p>
+
+<ul>
+    <li>Make sure you use the right <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank"><strong>input types</strong></a> for special type of data like <em>email</em> and <em>telephone</em>.</li>
+    <li>Don't worry about making the form functional. Set the form attribute to something like: <pre>action="/action_page.php"</pre></li>
+  <li><a href="https://www.w3schools.com/tags/att_input_type_tel.asp" target="_blank"><strong>Check this page</strong></a> for example telephone form input validation.</li>
+</ul>
+
+<h2>Add your form HTML below.</h2>
+
+<!-- ADD YOUR FORM BELOW THIS COMMMENT -->
+
+<form action="/action_page.php">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value="Alejandro Vargas"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" value="avarga4@gmu.edu"><br>
+  <label for="tel">Telephone:</label><br>
+  <input type="tel"id="tel" name="tel" value="(571) 123-4567"><br><br>
+
+  <p>Meal Choice (choose <strong>one</strong>):</p>
+  <input type="radio" id="html" name="meal_choice" value="Beef">
+  <label for="Beef">Beef</label><br>
+  <input type="radio" id="Chicken" name="meal_choice" value="Chicken">
+  <label for="Chicken">Chicken</label><br>
+   <input type="radio" id="Fish" name="meal_choice" value="Fish">
+  <label for="Fish">Fish</label><br>
+  <input type="radio" id="Vegan" name="meal_choice" value="Vegan">
+  <label for="Vegan">Vegan</label><br><br>
+
+  <textarea name="message" rows="10" cols="30">
+Comments
+</textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+  </body>
+
+  </html>
