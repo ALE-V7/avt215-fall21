@@ -10,14 +10,14 @@
     <meta name="description" content="Assignment 4: Working with Javascript">
     <title>Assignment 4: Working with Javascript</title>
     <link rel="stylesheet" href="style.css">
-<!-- styles needed for jQuery UI demos, uncomment the 2nd link if you download your own CSS -->
-<!-- we need the jquery UI css to style the interface widgets & animations -->
+
+
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" -->
-    <!-- link rel="stylesheet" href="jquery-ui.css" -->
+
     <style>
       #draggable { width: 150px; height: 150px; padding: 0.5em; }
     </style>
-<!-- bring jquery & jquery UI into our web page from Google's CDN -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
@@ -29,24 +29,63 @@
     $( function() {
       $( "#draggable" ).draggable();
     } );
+
+    $( function() {
+   $( "#dialog" ).dialog();
+ } );
+
+ $(document).ready(function(){
+   $("button").click(function(){
+     alert("Value: " + $("#test").val());
+   });
+ });
+
+ $(function(){
+   $("button").click(function(){
+     $("div").animate({left: '250px'});
+   });
+ });
+
     </script>
   </head>
   <body>
-<!-- Body section contains content displayed in web browser window -->
+
 
   <h1>Assignment 4: Working with Javascript</h1>
 
   <p>Here are 5 examples of jQuery UI components.</p>
 
   <h2>Example 1: Datepicker</h2>
-<!-- HTML code for the datepicker widget -->
-  <p>Date: <input type="text" id="datepicker"></p>
+
+      <p>Date: <input type="text" id="datepicker"></p>
 
   <h2>Example 2: Draggable</h2>
-<!-- HTML code for the draggable widget -->
-<div id="draggable" class="ui-widget-content">
-<p>Drag me around</p>
-</div>
+
+    <div id="draggable" class="ui-widget-content">
+      <p>Drag me around</p>
+    </div>
+
+  <h2>Example 3: Dialog</h2>
+
+    <div id="dialog" title="Example 3">
+      <p>Close me please!</p>
+    </div>
+
+<h2>Example 4: Get Content</h2>
+
+      <p>Name: <input type="text" id="test" value="Refresh this page after pressing OK"></p>
+
+<button>Show Value</button>
+
+
+  <h2>Example 5: Animation</h2>
+
+    <button>Start Animation</button>
+
+      <p>Please press this after previous examples.</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
 
   </body>
 </html>
